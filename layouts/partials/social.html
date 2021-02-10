@@ -1,0 +1,28 @@
+{{ $social := .Site.Params.social }}
+
+<div class="social-icons">
+    <a class="facebook" title="{{ $social.facebook }}" href="https://www.facebook.com/{{ $social.facebook }}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#facebook"></svg>
+    </a>
+    <a class="twitter" title="{{ $social.twitter }}" href="https://twitter.com/{{ $social.twitter }}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#twitter"></svg>
+    </a>
+    <a class="linkedin" title="{{ $social.linkedin }}" href="https://www.linkedin.com/in/{{ $social.linkedin }}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#linkedin"></svg>
+    </a>
+    <a class="instagram" title="{{ $social.instagram }}" href="https://instagram.com/{{ $social.instagram }}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#instagram"></svg>
+    </a>
+    <a class="github" title="{{ $social.github }}" href="https://github.com/{{ $social.github }}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#github"></svg>
+    </a>
+    <a class="gitlab" title="{{ $social.gitlab }}" href="https://gitlab.com/{{ $social.gitlab }}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#gitlab"></svg>
+    </a>
+    <a class="mail" title="a.raziq.1992@gmail.com" href="mailto:{{.Site.Author.email}}" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 1792 1792"><use xlink:href="/icons/social-icons.svg#mail"></svg>
+    </a>
+    <a class="rss" title="{{ $social.gitlab }}" href="/index.xml" target="_blank" rel="me noopener">
+        <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#rss"></svg>
+    </a>
+</div>

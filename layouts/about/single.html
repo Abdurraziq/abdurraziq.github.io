@@ -1,0 +1,146 @@
+{{ define "main"}}
+<h1 class="text-center">{{ .Title }}</h1>
+
+<div class="profile margin-top">
+    <img src="/img/raziq.jpg" alt="Profile Picture" class="profile-img">
+    <div class="card self-desc">
+        <p class="no-margin-bottom">
+            Hai 👋, Saya <strong>Abdurraziq Bachmid</strong>, biasa dipanggil:
+            <strong><em>Raziq</em></strong>,
+            <strong><em>Aziq</em></strong> atau
+            <strong><em>Ziq</em></strong>. Saat ini Saya tinggal di Kota Manado.
+            Saya adalah penggemar elektronik <em>(electronics enthusiast)</em>
+            yang menyukai segala sesuatu yang berkaitan dengan rangkaian
+            elektronika, sistem audio dan mikrokontroller. Saya juga menyukai
+            pemrograman utamanya yang berkaitan dengan mikrokontroller dan IoT
+            😀.
+        </p>
+    </div>
+</div>
+
+<h2 class="sec-title margin-top">Skills</h2>
+<p>
+    <span class="tag">C/C++</span>
+    <span class="tag">Java</span>
+    <span class="tag">Kotlin</span>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">Js</span>
+    <span class="tag">PHP</span>
+    <span class="tag">MySQL</span>
+    <span class="tag">Electronics</span>
+    <span class="tag">Audio</span>
+    <span class="tag">Microcontroller</span>
+    <span class="tag">Arduino</span>
+    <span class="tag">IoT</span>
+</p>
+
+<h2 class="sec-title margin-top">Project</h2>
+<div class="row">
+    <div class="col-3">
+        <div class="card no-padding hover">
+            <a
+                href="https://github.com/Abdurraziq/ZMPT101B-arduino"
+                target="_blank" rel="me noopener">
+                    <img
+                        src="/img/project-1.png"
+                        alt="Project"
+                        class="card-img">
+            </a>
+            <div class="card-body">
+                <p class="card-title">
+                    <a
+                        href="https://github.com/Abdurraziq/ZMPT101B-arduino"
+                        target="_blank"
+                        rel="me noopener">
+                            ZMPT101B-arduino
+                    </a>
+                </p>
+                <p class="card-text">
+                    <a
+                        href="https://github.com/Abdurraziq/ZMPT101B-arduino"
+                        target="_blank" rel="me noopener">
+                            Library sensor ZMPT101B untuk Arduino.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card no-padding hover">
+            <a
+                href="https://github.com/Abdurraziq/Smart-Energy-Meter"
+                target="_blank"
+                rel="me noopener">
+                    <img
+                        src="/img/project-2.png"
+                        alt="Project"
+                        class="card-img">
+            </a>
+            <div class="card-body">
+                <p class="card-title">
+                    <a
+                        href="https://github.com/Abdurraziq/Smart-Energy-Meter"
+                        target="_blank"
+                        rel="me noopener">
+                            Smart Energy Meter
+                    </a>
+                </p>
+                <p class="card-text">
+                    <a
+                        href="https://github.com/Abdurraziq/Smart-Energy-Meter"
+                        target="_blank"
+                        rel="me noopener">
+                            Sistem pengukur konsumsi energi listrik
+                            berbasiskan Arduino dan Blynk.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card no-padding hover">
+            <a
+                href="https://github.com/Abdurraziq/Body-Mass-Index-Measurement"
+                target="_blank"
+                rel="me noopener">
+                    <img
+                        src="/img/project-3.png"
+                        alt="Project"
+                        class="card-img">
+            </a>
+            <div class="card-body">
+                <p class="card-title">
+                    <a
+                        href="https://github.com/Abdurraziq/Body-Mass-Index-Measurement"
+                        target="_blank"
+                        rel="me noopener">
+                            BMI Measurement
+                    </a>
+                </p>
+                <p class="card-text">
+                    <a
+                        href="https://github.com/Abdurraziq/Body-Mass-Index-Measurement"
+                        target="_blank"
+                        rel="me noopener">
+                            Alat pengukur indeks massa tubuh berbasis Arduino.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="sec-title margin-top">Contact</h2>
+<div class="card">
+    <p class="no-margin-bottom text-center contact">
+        email:
+        <a href="mailto:{{.Site.Author.email}}">
+            a.raziq.1992@gmail.com
+        </a>
+    </p>
+</div>
+
+{{ end }}

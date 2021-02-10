@@ -1,0 +1,8 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <div class="tags">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <a href="/tags/{{ $name | urlize }}" class="tag">#{{ $name }} ({{ $taxonomy.Count }})</a>
+        {{end}}
+    </div>
+{{ end }}

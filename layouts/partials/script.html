@@ -1,0 +1,8 @@
+{{ $opts := dict "targetPath" "/sw.js" "minify" true }}
+{{ $serviceWorker := resources.Get "js/sw.js"  | resources.ExecuteAsTemplate "js/sw.js" . | js.Build $opts }}
+
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("{{ $serviceWorker.Permalink }}");
+    }
+</script>

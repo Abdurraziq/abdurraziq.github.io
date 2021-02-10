@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{- $image := or .Params.image .Site.Params.og_image -}}
+<h1 class="text-center">{{ .Title }}</h1>
+<div class="tags">
+{{ with .Params.tags }}
+    {{ range . }}
+    <a href='/tags/{{ . | urlize }}' class="tag">#{{ . }}</a>
+    {{ end }}
+{{ end }}
+</div>
+<p class="description">{{ .Params.description }}</p>
+<div class="author">
+    <img src="/img/raziq-lr.jpg" alt="Author" class="circle-img" loading='lazy' width="40" height="40">
+    <div class="info">
+        <p class="name">Abdurraziq Bachmid</p>
+        <p class="date">{{ .Date.Format "2 January 2006"}} · {{.ReadingTime}} menit dibaca normal</p>
+    </div>
+    {{- partial "share.html" . -}}
+</div>
+
+<img src="{{ $image }}" alt="Featured Image" class="featured-img" loading='lazy'>
+{{ with .Params.img_desc }}
+    <p class="featured-img-desc"><small>{{ . | markdownify}}</small></p>
+{{ end }}
+
+{{ .Content }}
+
+{{- partial "disqus.html" . -}}
+
+{{ end }}

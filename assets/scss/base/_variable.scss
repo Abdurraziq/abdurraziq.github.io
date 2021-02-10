@@ -1,0 +1,22 @@
+// Body
+$font-size: 1.1rem;
+$font-family: Butler, serif;
+$font-color: #555555;
+$body-font-size: 1.1rem;
+$line-height: 1.7;
+
+// Headings
+$heading-font-family: Butler, serif;
+$heading-line-height: 1.1;
+$heading-font-color: #222;
+
+// Border for blockquote
+$bq-border: 6px solid #f0f0f0;
+
+// Limit text lines
+%text-limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,30 @@
+<div class="share-icons">
+  <a class="facebook" title="Bagikan di Facebook" href="http://www.facebook.com/share.php?u={{ .Permalink }}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#facebook"></svg>
+  </a>
+  <a class="twitter" title="Bagikan di Twitter" href="http://twitter.com/home?status={{ .Permalink }}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#twitter"></svg>
+  </a>
+  <a class="linkedin" title="Bagikan di Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title=&summary=&source=" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#linkedin"></svg>
+  </a>
+  <a class="mail" title="Bagikan melalui Email" href="mailto:?&body={{ .Permalink }}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 1792 1792"><use xlink:href="/icons/social-icons.svg#mail"></svg>
+  </a>
+  <a class="share" title="Bagikan" href="javascript:void(0)" rel="noopener" onclick="share()">
+    <svg viewBox="0 0 24 24"><use xlink:href="/icons/social-icons.svg#share"></svg>
+  </a>
+</div>
+
+<script>
+  function share() {
+    if (navigator.share) {
+      navigator.share({
+        title: '{{ .Title }}',
+        text: '{{ .Params.description }}',
+        url: '{{ .Permalink }}',
+      })
+        .catch((error) => console.log('Terjadi kesalahan', error));
+    }
+  }
+</script>

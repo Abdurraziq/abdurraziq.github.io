@@ -1,0 +1,89 @@
+{{ define "main" }}
+    <h1 class="no-margin-bottom text-center">Raziq Tech</h1>
+    <p class="text-center">// Hai Selamat datang. 😃</p>
+
+    <hr>
+
+    <h2 class="margin-top">Artikel Terbaru</h2>
+    <div class="row">
+        {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+        {{- $image := or .Params.image .Site.Params.og_image -}}
+        <div class="col-3">
+            <div class="card no-padding hover">
+                <a
+                    href="{{.Permalink}}"
+                    rel="me noopener">
+                        <img
+                            src="{{ $image }}"
+                            alt="Project"
+                            class="card-img">
+                </a>
+                <div class="card-body">
+                    <p class="card-title">
+                        <a
+                            href="{{ .Permalink }}"
+                            rel="me noopener">
+                            {{ .Title }}
+                        </a>
+                    </p>
+                    <p class="card-subtitle">
+                        {{ .Date.Format "2 January 2006"}}
+                    </p>
+                    <p class="card-text">
+                        <a
+                            href="{{.Permalink}}"
+                            rel="me noopener">
+                            {{ or .Description .Summary}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <p class="text-center padding-top">
+        <a href="/blog" class="tag">– Selengkapnya –</a>
+    </p>
+
+    <h2 class="margin-top">Project Terakhir</h2>
+    <div class="row">
+        {{ range first 6 (where .Site.RegularPages "Section" "project") }}
+        {{- $image := or .Params.image .Site.Params.og_image -}}
+        <div class="col-3">
+            <div class="card no-padding hover">
+                <a
+                    href="{{.Permalink}}"
+                    rel="me noopener">
+                        <img
+                            src="{{ $image }}"
+                            alt="Project"
+                            class="card-img">
+                </a>
+                <div class="card-body">
+                    <p class="card-title">
+                        <a
+                            href="{{ .Permalink }}"
+                            rel="me noopener">
+                            {{ .Title }}
+                        </a>
+                    </p>
+                    <p class="card-subtitle">
+                        {{ .Date.Format "2 January 2006"}}
+                    </p>
+                    <p class="card-text">
+                        <a
+                            href="{{.Permalink}}"
+                            rel="me noopener">
+                            {{ or .Description .Summary}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <p class="text-center padding-top">
+        <a href="/project" class="tag">– Selengkapnya –</a>
+    </p>
+
+{{ end }}

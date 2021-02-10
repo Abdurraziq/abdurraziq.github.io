@@ -1,0 +1,37 @@
+baseURL = "https://raziq.tech/"
+languageCode = "in"
+DefaultContentLanguage = "id"
+title = "Raziq Tech"
+summaryLength = 10
+
+paginate = 10
+
+enableEmoji = true
+# enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+PygmentsCodeFences = true
+PygmentsStyle = "manni"
+
+disqusShortname= "raziq-tech"
+
+
+[author]
+  name = "Abdurraziq Bachmid"
+  email = "a.raziq.1992@gmail.com"
+
+[params]
+
+  Description = "raziq.tech Site"
+  og_image = "/icons/icon-512x512.png"
+
+  [params.social]
+    twitter = "abachmid_"
+    github = "Abdurraziq"
+    facebook = "abdurraziqbachmid"
+    fb_id = "227835342319413"
+    instagram = "abdurraziq_bachmid"
+    linkedin = "abachmid"
+    gitlab = "araziq"
+

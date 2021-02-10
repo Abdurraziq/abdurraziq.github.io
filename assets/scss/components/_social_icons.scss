@@ -1,0 +1,82 @@
+.social-icons,
+.share-icons {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    >svg {
+        height: 18.5px;
+        fill: #d5d5d5;
+        margin: 6px;
+    }
+}
+
+.facebook:hover>svg {
+    fill: #1877F2;
+}
+
+.twitter:hover>svg {
+    fill: #1DA1F2;
+}
+
+.linkedin:hover>svg {
+    fill: #0077B5;
+}
+
+.mail:hover>svg {
+    fill: #7D7D7D;
+}
+
+.instagram:hover>svg {
+    fill: #E4405F;
+}
+
+.github:hover>svg {
+    fill: #181717;
+}
+
+.gitlab:hover>svg {
+    fill: #FCA121;
+}
+
+.rss:hover>svg {
+    fill: #FFA500;
+}
+
+.share:hover>svg {
+    fill: #121212;
+}
+
+
+.github-pages,
+.hugo {
+    >svg {
+        height: 20.4px;
+        fill: #777;
+        vertical-align: middle;
+        margin: 6px;
+    }
+}
+
+.github-pages {
+    >svg {
+        width: 101.4px;
+        fill: #181717;
+    }
+}
+
+.hugo {
+    >svg {
+        width: 77.8px;
+    }
+}
+
+@media (max-width: #{$mobile}) {
+    .share-icons {
+
+        a:not(.share) {
+            display: none;
+        }
+    }
+}

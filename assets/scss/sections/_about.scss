@@ -1,0 +1,50 @@
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 16px 16px #00000023;
+}
+
+.sec-title {
+    margin-bottom: 0.8rem !important;
+}
+
+.self-desc {
+    max-width: 480px;
+    margin-left: 40px;
+    margin-top: 64px;
+    font-size: 1rem;
+    line-height: 2;
+
+    &:first-letter {
+        float: left;
+        font-size: 4rem;
+        line-height: 1;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+
+.contact {
+    line-height: 1.4;
+}
+
+@media (max-width: #{$mobile}) {
+    .profile {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .profile-img {
+        margin: auto;
+    }
+
+    .self-desc {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
