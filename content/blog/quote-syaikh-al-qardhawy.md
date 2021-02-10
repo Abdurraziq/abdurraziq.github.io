@@ -1,8 +1,8 @@
 ---
-title: "Quote dari Syaikh Al-Qardhawy Quote dari Syaikh Al-Qardhawy Quote dari Syaikh Al-Qardhawy"
+title: "Quote dari Syaikh Al-Qardhawy"
 date: 2021-02-08T13:18:56+08:00
 draft: false
-description: "Quote dari Syaikh Al-Qardhawy Quote dari Syaikh Al-Qardhawy Quote dari Syaikh Al-Qardhawy"
+description: "Quote dari Syaikh Al-Qardhawy"
 tags:
     - "Quote"
 image: "https://images.unsplash.com/photo-1606823616265-3c84de4cfcff?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brett-jordan-Pd3ml1YRPlg-unsplash.jpg&w=800"
