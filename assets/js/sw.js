@@ -1,9 +1,9 @@
-const CACHE_NAME       = '{{  now.Format "02-Jan-2006_15:04" }}';
+const CACHE_NAME = '{{  now.Format "02-Jan-2006_15:04" }}';
 const FILES_TO_CHACHED = [
     "/404.html",
     "/manifest.json",
     "/style.css",
-    "/about/",
+    "/about/index.html",
     "/fonts/butler/Butler-Bold.woff2",
     "/fonts/butler/Butler.woff2",
     "/icons/favicon.ico",
@@ -36,24 +36,30 @@ self.addEventListener("install", (event) => {
 // });
 
 self.addEventListener("fetch", (event) => {
-    if (event.request.mode === "navigate") {
-        event.respondWith(
-            caches
-                .match(event.request)
-                .then((response) => {
-                    if (response) {
-                        return response;
+    event.respondWith(
+        caches
+            .match(event.request)
+            .then((response) => {
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request).then((response) => {
+                    if (
+                        response.status === 404 &&
+                        event.request.mode === "navigate"
+                    ) {
+                        return caches.match("/404.html");
                     }
-                    return fetch(event.request).then((response) => {
-                        if (response.status === 404) {
-                            return caches.match("/404.html");
-                        }
-                        return response;
-                    });
-                })
-                .catch(() => caches.match("/offline/index.html"))
-        );
-    }
+                    return response;
+                });
+            })
+            .catch((error) => {
+                if (event.request.mode === "navigate") {
+                    return caches.match("/offline/index.html");
+                }
+                console.error(error);
+            })
+    );
 });
 
 /* Async version */
