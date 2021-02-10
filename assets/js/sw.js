@@ -3,7 +3,7 @@ const FILES_TO_CHACHED = [
     "/404.html",
     "/manifest.json",
     "/style.css",
-    "/about/index.html",
+    "/about/",
     "/fonts/butler/Butler-Bold.woff2",
     "/fonts/butler/Butler.woff2",
     "/icons/favicon.ico",
