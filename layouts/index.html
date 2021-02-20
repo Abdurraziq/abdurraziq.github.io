@@ -4,9 +4,10 @@
 
     <hr>
 
-    <h2 class="margin-top">Artikel Terbaru</h2>
+    {{- with (where .Site.RegularPages "Section" "blog") -}}
+    <h2 class="margin-top">Project Terakhir</h2>
     <div class="row">
-        {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+        {{ range first 6 . }}
         {{- $image := or .Params.image .Site.Params.og_image -}}
         <div class="col-3">
             <div class="card no-padding hover">
@@ -19,13 +20,13 @@
                             class="card-img">
                 </a>
                 <div class="card-body">
-                    <p class="card-title">
+                    <h1 class="card-title">
                         <a
                             href="{{ .Permalink }}"
                             rel="me noopener">
                             {{ .Title }}
                         </a>
-                    </p>
+                    </h1>
                     <p class="card-subtitle">
                         {{ .Date.Format "2 January 2006"}}
                     </p>
@@ -42,12 +43,14 @@
         {{ end }}
     </div>
     <p class="text-center padding-top">
-        <a href="/blog" class="tag">– Selengkapnya –</a>
+        <a href="/blog" class="tag">Selengkapnya →</a>
     </p>
+    {{ end }}
 
+    {{- with (where .Site.RegularPages "Section" "project") -}}
     <h2 class="margin-top">Project Terakhir</h2>
     <div class="row">
-        {{ range first 6 (where .Site.RegularPages "Section" "project") }}
+        {{ range first 6 . }}
         {{- $image := or .Params.image .Site.Params.og_image -}}
         <div class="col-3">
             <div class="card no-padding hover">
@@ -60,13 +63,13 @@
                             class="card-img">
                 </a>
                 <div class="card-body">
-                    <p class="card-title">
+                    <h1 class="card-title">
                         <a
                             href="{{ .Permalink }}"
                             rel="me noopener">
                             {{ .Title }}
                         </a>
-                    </p>
+                    </h1>
                     <p class="card-subtitle">
                         {{ .Date.Format "2 January 2006"}}
                     </p>
@@ -85,5 +88,6 @@
     <p class="text-center padding-top">
         <a href="/project" class="tag">– Selengkapnya –</a>
     </p>
+    {{ end }}
 
 {{ end }}
