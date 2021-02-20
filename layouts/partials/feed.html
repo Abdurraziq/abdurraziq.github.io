@@ -1,9 +1,9 @@
 {{- $image := or .Params.image .Site.Params.og_image -}}
 <div class="feed">
     <div class="content">
+        <p class="date">{{ .Date.Format "2 January 2006"}}</p>
         <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
         <p class="summary"><a href="{{.Permalink}}">{{ or .Description .Summary}}</a></p>
-        <p class="date">{{ .Date.Format "2 January 2006"}}</p>
     </div>
     <a href="{{.Permalink}}"><img src="{{ $image }}" alt="Feed image" loading='lazy'></a>
 </div>
