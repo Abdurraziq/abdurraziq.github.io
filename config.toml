@@ -7,14 +7,15 @@ summaryLength = 10
 paginate = 10
 
 enableEmoji = true
-# enableGitInfo = true
+
 enableRobotsTXT = true
 canonifyURLs = true
 
 PygmentsCodeFences = true
-PygmentsStyle = "manni"
+PygmentsLinenOs = true
+PygmentsUseClasses = true
 
-disqusShortname= "raziq-tech"
+disqusShortname = "raziq-tech"
 
 
 [author]
@@ -35,3 +36,7 @@ disqusShortname= "raziq-tech"
     linkedin = "abachmid"
     gitlab = "araziq"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
