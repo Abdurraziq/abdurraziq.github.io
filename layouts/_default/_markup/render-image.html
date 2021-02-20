@@ -1,8 +1,18 @@
 {{ if .Title }}
 <figure>
-    <img class="responsive-image" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading='lazy'>
-    <figcaption>{{ .Title }}</figcaption>
+    <img
+        src="{{ .Destination | safeURL }}"
+        alt="{{ .Text }}"
+        title="{{ .Text }}"
+        class="responsive-image"
+        loading='lazy'>
+    <figcaption>{{ .Title | markdownify }}</figcaption>
 </figure>
 {{ else }}
-<img class="responsive-image" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading='lazy'>
+<img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ .Text }}"
+    title="{{ .Text }}"
+    class="responsive-image block"
+    loading='lazy'>
 {{ end }}
