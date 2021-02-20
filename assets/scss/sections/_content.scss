@@ -40,14 +40,14 @@
     text-align: center;
 
     .tag {
-        font-size: 0.75em !important;
+        font-size: 0.8em !important;
     }
 }
 
 .tag {
     display: inline-block;
     padding: 0.35em 0.65em;
-    font-size: 0.8em;
+    font-size: 0.85em;
     line-height: 1;
     color: $font-color !important;
     text-align: center;
@@ -63,12 +63,21 @@
 
 .featured-img {
     width: 100%;
-    max-height: calc(100vh - 35vh);
+    max-height: 75vh;
     object-fit: cover;
+    margin-bottom: 8px;
 }
 
 .featured-img-desc {
     line-height: 1;
+}
+
+.footnotes {
+    font-size: 1rem;
+    p {
+        margin: 0 !important;
+        line-height: 1.5;
+    }
 }
 
 #disqus_thread {

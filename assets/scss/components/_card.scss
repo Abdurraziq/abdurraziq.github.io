@@ -1,6 +1,6 @@
 .card {
     border: $borders;
-    border-radius: 8px;
+    border-radius: $card-border-radius;
     overflow: hidden;
     padding: 2rem;
     transition: 0.3s;
@@ -23,10 +23,11 @@
 }
 
 .card-title {
-    margin-bottom: 0.45rem;
+    margin: 0 0 0.45rem 0;
     font-weight: 600;
     line-height: 1.2;
     -webkit-line-clamp: 2;
+    font-size: 1.25rem;
 
     a {
         color: $heading-font-color !important;
@@ -35,13 +36,14 @@
 }
 
 .card-subtitle {
-    margin-bottom: 0.6rem;
-    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.85rem;
 }
 
 .card-text {
     margin: 0;
-    font-size: 0.9rem;
+    line-height: 1.5;
+    font-size: 0.96rem;
     -webkit-line-clamp: 3;
 
     a {

@@ -8,6 +8,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
   font-size: $font-size;
+  scroll-behavior: smooth;
 }
 
 // Body base
@@ -15,6 +16,7 @@ body {
   color: $font-color;
   background: $background;
   font-size: $body-font-size;
+  padding-top: 80px;
 }
 
 p,
@@ -54,7 +56,8 @@ h5 {
 // Increased margin on additional headings
 h1:not(:first-child),
 h2:not(:first-child),
-h3:not(:first-child) {
+h3:not(:first-child),
+h4:not(:first-child) {
   margin-top: 2rem;
 }
 
@@ -80,10 +83,12 @@ h5 {
 }
 
 @include small-breakpoint {
+
   // Increased margin on additional headings
   h1:not(:first-child),
   h2:not(:first-child),
-  h3:not(:first-child) {
+  h3:not(:first-child),
+  h4:not(:first-child) {
     margin-top: 2.5rem;
   }
 
@@ -122,6 +127,15 @@ a {
   }
 }
 
+figure {
+  margin: 3rem 0 2.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
 // Highlight
 mark {
   background: $highlight;
@@ -133,7 +147,7 @@ blockquote {
   margin: 0 0 $margins 0;
   border-left: $bq-border;
   padding: 0 1.5rem;
-  font-size: 1.5rem;
+  font-size: $body-font-size;
 
   cite {
     display: block;
@@ -146,14 +160,21 @@ blockquote {
 // Code block styling
 pre {
   border: 0;
-  border-radius: $border-radius;
-  background: $code-background;
-  padding: 1rem;
   tab-size: 2;
   color: $code-color;
   font-family: $code-family;
   font-size: $code-size;
-  margin: 0 0 $margins 0;
+  padding: 0 0.25rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;  
+
+  &:not(.chroma) {
+    border-radius: $border-radius;
+    background: $code-background;
+    padding: 1rem;
+    margin: 0 0 $margins 0;
+
+  }
 
   code {
     font-family: $code-family;
@@ -178,12 +199,14 @@ kbd {
 }
 
 // Inline code styling
-:not(pre) > code {
+:not(pre)>code {
   color: $code-color;
-  background: $code-background;
   font-family: $code-family;
   font-size: $code-size;
-  padding: 0 0.2rem;
+}
+
+p>code {
+  padding: 0.1rem 0.3rem;
   border: $borders;
   border-radius: $border-radius;
 }
