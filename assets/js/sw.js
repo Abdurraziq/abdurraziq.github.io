@@ -4,8 +4,7 @@ const FILES_TO_CHACHED = [
     "/manifest.json",
     "/style.css",
     "/about/index.html",
-    "/fonts/butler/Butler-Bold.woff2",
-    "/fonts/butler/Butler.woff2",
+
     "/icons/favicon.ico",
     "/icons/icon-96x96.png",
     "/icons/icon-192x192.png",
