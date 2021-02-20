@@ -37,7 +37,7 @@ Secara garis besar jika kita ingin menggunakan `Markdown` untuk memformat dokume
 1. Membuat sebuah dokumen dengan teks editor kemudian menyimpannya sebagai teks sederhana *(plain text)* dengan ekstensi `.md` atau `.markdown`.
 2. Menggunakan aplikasi `Markdown` untuk mem-*parsing* atau menguraikan dokumen tadi menjadi file `HTML` (umumnya) atau file lainnya seperti `PDF`.
 
-## D. Kenapa Harus Menggunakan Markdown?
+## C. Kenapa Harus Menggunakan Markdown?
 
 ### 1. Sintaksnya Sederhana
 
@@ -91,7 +91,7 @@ Karena semakin meluasnya implementasi Markdown maka kita sekarang-pun dapat meng
 
 Independen disini maksudnya adalah bahwa penggunaan `Markdown` tidak tergantung pada suatu *platform* atau aplikasi tertentu untuk dapat bekerja. Hal ini disebabkan karena file *Markdown* hanyalah sebuah file teks biasa *(plain text)* dan hampir semua *platform* baik Windows, Linux, Unix pasti mendukungnya.
 
-## E. Sintaks-sintaks Markdown
+## D. Sintaks-sintaks Markdown
 
 Sintaksis Markdown sayangnya tidak memiliki sebuah standarisasi tetap. Akibatnya, muncul berbagai varian sintaks lainnya yang disebut *flavors* seperti; `CommonMark`, `GitHub Flavored Markdown` (GFM), `php Markdown Extra`, `R Markdown` dan lainnya.
 
