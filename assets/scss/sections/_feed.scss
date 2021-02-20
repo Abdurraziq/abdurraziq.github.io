@@ -41,13 +41,13 @@
 
         h1 {
             color: $heading-font-color;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
         }
 
         .summary {
             color: $font-color;
             line-height: 1.4;
-            font-size: 1rem;
+            font-size: 0.96rem;
         }
 
         .date {
@@ -75,11 +75,6 @@
 
             .summary {
                 display: none;
-            }
-
-            .date {
-                font-size: 0.75rem;
-                line-height: 1.2;
             }
         }
     }
