@@ -1,17 +1,18 @@
 // Body
-$font-size: 1.1rem;
-$font-family: Butler, serif;
+$font-family: "Source Serif", serif;
 $font-color: #555555;
-$body-font-size: 1.1rem;
-$line-height: 1.7;
+// $body-font-size: 1.1rem;
+$line-height: 1.8;
 
-// Headings
-$heading-font-family: Butler, serif;
-$heading-line-height: 1.1;
-$heading-font-color: #222;
+$heading-font-family: "Source Serif", serif;
+$heading-font-color: #121212;
+
+$code-family: 'JetBrains Mono', monospace;
 
 // Border for blockquote
 $bq-border: 6px solid #f0f0f0;
+
+$card-border-radius: 8px;
 
 // Limit text lines
 %text-limit {
