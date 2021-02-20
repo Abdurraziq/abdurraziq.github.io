@@ -159,7 +159,9 @@
     {{/*  Style  */}}
     {{- $options := (dict "targetPath" "style.css" "outputStyle" "compressed") -}}
     {{- $style := resources.Get "scss/main.scss" | resources.ToCSS $options -}}
-    <link rel="preload" href="/fonts/butler/Butler.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/butler/Butler-Bold.woff2" as="font" crossorigin="anonymous">
+    <!-- <link rel="preload" href="/fonts/Source-Serif-Pro-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Source-Serif-Pro-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Source-Serif-Pro-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Source-Code-Pro.woff2" as="font" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
