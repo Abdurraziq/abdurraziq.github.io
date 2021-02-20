@@ -16,15 +16,17 @@
 @import 'primitive-ui/base/mixins';
 @import 'primitive-ui/base/normalize';
 @import 'primitive-ui/base/reset';
-@import 'primitive-ui/components/scaffolding';
 @import 'primitive-ui/components/grid';
 @import 'primitive-ui/components/helpers';
 @import 'primitive-ui/components/buttons';
 @import 'primitive-ui/components/forms';
+@import 'primitive-ui/components/scaffolding';
+@import 'primitive-ui/components/tables';
 
 
 @import 'base/base';
 @import 'base/helplers';
+@import 'base/syntax';
 
 @import 'components/card';
 @import 'components/footer';
