@@ -4,7 +4,11 @@ const FILES_TO_CHACHED = [
     "/manifest.json",
     "/style.css",
     "/about/index.html",
-
+    "/fonts/SourceSerif4-Bold.woff2",
+    "/fonts/SourceSerif4-BoldIt.woff2",
+    "/fonts/SourceSerif4-It.woff2",
+    "/fonts/SourceSerif4-Regular.woff2",
+    "/fonts/SourceSerif4-Semibold.woff2",
     "/icons/favicon.ico",
     "/icons/icon-96x96.png",
     "/icons/icon-192x192.png",
