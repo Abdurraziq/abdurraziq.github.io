@@ -14,7 +14,7 @@ img_desc: "Logo Markdown oleh [Dustin Curtis](https://github.com/dcurtis) dari [
 
 Berbicara tentang `Markdown` sebenarnya kita berbicara tentang dua hal; pertama tentang sebuah sintaks *markup* dan kedua tentang sebuah perangkat lunak.
 
-Jika berbicara tentang sintaks maka, `Markdown` adalah sekumpulan sintaks *markup* yang memungkinkan kita untuk memformat dokumen teks. Sementara jika berbicara tentang perangkat lunak maka, `Markdown` adalah sebuah perangkat lunak yang dapat mengubah dokumen dengan sintaks tadi menjadi dokumen `HTML` atau format lainnya.
+Jika berbicara tentang sintaks maka, `Markdown` adalah sekumpulan sintaks *markup* yang memungkinkan kita untuk memformat suatu elemen dalam dokumen teks. Sementara jika berbicara tentang perangkat lunak maka, `Markdown` adalah sebuah perangkat lunak yang dapat mengubah dokumen dengan sintaks tadi menjadi dokumen `HTML` atau format lainnya.
 
 ![John Gruber dan Aaron Swartz](/img/John_and_Aaron.jpg "John Gruber *(kiri)* dan Aaron Swartz *(kanan)*")
 
@@ -24,18 +24,19 @@ Sumber gambar: Wikimedia [^1] [^2]
 
 ## B. Cara Kerja Markdown
 
-Banyak dari kita mungkin terbiasa menulis dokumen dengan menggunakan editor jenis `WYSIWYG` *(what you see is what you get)* misalnya; Microsoft Word, Libre Office dsb. Editor tersebut memungkinkan kita memformat suatu kata atau kalimat hanya dengan menekan tombol (atau *shortcut keyboard*) dan perubahannya bisa langsung terlihat di layar. Sementara, jika kita menggunakan `Markdown` maka, kita harus menuliskan suatu sintaks jika ingin memformat teks atau kalimat yang diinginkan. Misalnya, untuk membuat suatu kata/kalimat menjadi miring *(italic)* maka, kita harus menambahkan tanda bintang `*` di awal dan di akhir kata/kalimat tersebut (mis; `*teks*`). [^3]
+Banyak dari kita mungkin terbiasa menulis dokumen dengan menggunakan editor jenis `WYSIWYG` *(what you see is what you get)* misalnya; Microsoft Word, Libre Office dsb. Editor tersebut memungkinkan kita memformat suatu kata/kalimat hanya dengan menekan tombol (atau *shortcut keyboard*) dan perubahannya bisa langsung terlihat di layar. Sementara, jika kita menggunakan `Markdown` maka, kita harus menuliskan suatu sintaks jika ingin memformat kata/kalimat yang diinginkan. Misalnya, untuk membuat suatu kata/kalimat menjadi miring *(italic)* maka, kita harus menambahkan tanda bintang `*` di awal dan di akhir kata/kalimat tersebut (mis; `*teks*`). [^3]
 
-![Dokumen Markdown di VSCode](/img/markdown-preview.png "Sebuah dokumen Markdown yang sedang dibuka di VSCode <br>*sebelah kiri menunjukkan dokumen yang ditulis menggunakan Markdown dan sebelah kanan adalah tampilan pratinjau dari dokumen tersebut*")
+![Dokumen Markdown di VSCode](/img/markdown-preview.png "Sebuah dokumen `Markdown` yang sedang dibuka di VSCode <br>*sebelah kiri menunjukkan dokumen `Markdown` dan sebelah kanan adalah tampilan pratinjau dari dokumen tersebut*")
 
-Dokumen Markdown umumnya berupa dokumen teks sederhana *(plain text)* sehingga dapat dibaca/tulis dengan mudah menggunakan teks editor yang paling sederhana sekalipun seperti Notepad. Jika kita menginginkan editor yang memiliki fitur lebih lengkap seperti pratinjau dokumen, sintaks *highlighting*, dsb kita bisa menggunakan editor yang lebih *advance* seperti `VSCode`, `Atom` dsb. Bahkan, sekarang ini telah banyak teks editor *online* yang mendukung pembuatan dan pengeditan file `Markdown` secara langsung di *browser*.
+Dokumen Markdown umumnya berupa dokumen teks sederhana *(plain text)* sehingga dapat dibaca/tulis dengan mudah menggunakan teks editor yang paling sederhana sekalipun seperti Notepad. Jika kita menginginkan editor yang memiliki fitur lebih lengkap seperti pratinjau dokumen, *syntax highlighting*, dsb kita bisa menggunakan editor yang lebih *advance* seperti `VSCode`, `Atom` dsb. Bahkan, sekarang ini telah banyak teks editor *online* yang mendukung pembuatan dan pengeditan file `Markdown` secara langsung di *browser*.
 
-![Proses](/img/markdown-process.png "Proses penghubahan dokumen `Markdown` hingga ditampilkan di *browser*")
+![Proses](/img/markdown-process.png "Proses penghubahan dokumen `Markdown` hingga dapat ditampilkan di *browser*")
 
 Secara garis besar jika kita ingin menggunakan `Markdown` untuk memformat dokumen maka kita harus;
 
 1. Membuat sebuah dokumen dengan teks editor kemudian menyimpannya sebagai teks sederhana *(plain text)* dengan ekstensi `.md` atau `.markdown`.
-2. Menggunakan aplikasi `Markdown` untuk mem-*parsing* atau menguraikan dokumen tadi menjadi file `HTML` (umumnya) atau file lainnya seperti `PDF`.
+2. Menggunakan sintaks-sintaks `Markdown` untuk melakukan pemformatan.
+3. Menggunakan aplikasi `Markdown` untuk mem-*parsing* atau menguraikan dokumen tadi menjadi file `HTML` (umumnya) atau file lainnya seperti `PDF`.
 
 ## C. Kenapa Harus Menggunakan Markdown?
 
@@ -47,7 +48,7 @@ Menurut John Gruber, sintaks `Markdown` dibuat dengan tujuan...
 >
 > ***Terjemahan***:... membuatnya  dapat dibaca semaksimal mungkin. Idenya adalah bahwa dokumen dengan format `Markdown` harus dapat diterbitkan sebagaimana adanya, sebagai teks biasa, tanpa terlihat seperti telah ditandai dengan *tag* atau instruksi pemformatan. [^4]
 
-Jadi, tujuan utama sintaks `Markdown` dibuat adalah ***kesederhanaan*** dan ***keterbacaan***. Kita ambil contoh, untuk menampilkan teks dengan tampilan berikut:
+Jadi, tujuan utama sintaks `Markdown` dibuat adalah ***kesederhanaan*** dan ***keterbacaan***. Kita ambil contoh, untuk membuat tampilan berikut:
 
 {{< result >}}
 # Raziq Tech
@@ -85,19 +86,24 @@ Dari perbandingan di atas dapat terlihat bahwa sintaks `Markdown` dapat terbaca 
 
 Jika kita biasa *berselancar* di GitHub atau GitLab maka kita akan menemui bahwa hampir sebagian besar repositori yang ada di sana menggunakan `Markdown` untuk membuat dokumentasinya. Bahkan situs web seperti Reddit dan aplikasi chat seperti; Discord, Facebook, Telegram, WhatsApp dsb. menggunakan Markdown untuk memformat teks.
 
-Karena semakin meluasnya implementasi Markdown maka kita sekarang-pun dapat menggunakannya untuk membuat buku, bahkan konten halaman web.
+Karena semakin meluasnya implementasi `Markdown` maka kita sekarang-pun dapat menggunakannya untuk membuat buku, bahkan konten halaman web.
 
 ### 4. Independen
 
-Independen disini maksudnya adalah bahwa penggunaan `Markdown` tidak tergantung pada suatu *platform* atau aplikasi tertentu untuk dapat bekerja. Hal ini disebabkan karena file *Markdown* hanyalah sebuah file teks biasa *(plain text)* dan hampir semua *platform* baik Windows, Linux, Unix pasti mendukungnya.
+Independen disini maksudnya adalah bahwa penggunaan `Markdown` tidak tergantung pada suatu *platform* atau aplikasi tertentu untuk dapat bekerja. Hal ini disebabkan karena file *Markdown* hanyalah sebuah file teks biasa *(plain text)* dan hampir semua *platform* baik Windows, Linux dan Unix pasti mendukungnya.
 
 ## D. Sintaks-sintaks Markdown
 
-Sintaksis Markdown sayangnya tidak memiliki sebuah standarisasi tetap. Akibatnya, muncul berbagai varian sintaks lainnya yang disebut *flavors* seperti; `CommonMark`, `GitHub Flavored Markdown` (GFM), `php Markdown Extra`, `R Markdown` dan lainnya.
+Sintaksis `Markdown` sayangnya tidak memiliki sebuah standarisasi tetap. Akibatnya, muncul berbagai varian sintaks lainnya yang disebut *flavors* seperti; `CommonMark`, `GitHub Flavored Markdown` (`GFM`), `php Markdown Extra`, `R Markdown` dan lainnya.
 
-Sintaks-sintaks dalam `Markdown` terbagi menjadi dua yaitu; (1) sintaks dasar yang dibuat oleh John Gruber yang didukung oleh hampir semua aplikasi `Markdown` dan (2) sintaks tambahan *(extended)* yang muncul untuk melengkapi kekurangan-kekurangan yang ada di sintaks dasar, sayangnya beberapa sintaks tambahan hanya didukung oleh sebagian aplikasi `Markdown`.
+Sintaks-sintaks dalam `Markdown` umumnya, terbagi menjadi dua yaitu;
 
-Berikut ini adalah pembagian sintaks-sintaks `Markdown`.
+1. Sintaks dasar
+   Sintaks ini dibuat oleh John Gruber dan didukung oleh hampir semua aplikasi `Markdown`.
+2. Sintaks tambahan *(extended)*
+   Sintaks ini muncul sebagai upaya untuk melengkapi kekurangan-kekurangan yang ada dalam sintaks dasar, sayangnya sintaks tambahan hanya didukung oleh sebagian aplikasi `Markdown`.
+
+Tabel berikut ini menunjukkan pembagian sintaks-sintaks `Markdown`.
 
 {{< table >}}
 | Sintaks Dasar               | Sintaks Tambahan                      |
@@ -119,8 +125,8 @@ Lebih lanjut sintaks-sintaks dasar akan dibahas [disini](/blog/markdown-sintaks-
 
 ## Kesimpulan
 
-1. `Markdown` adalah sekumpulan sintaks *markup* yang memungkinkan kita untuk memformat dokumen teks kemudian mengubahnya menjadi dokumen `HTML` atau format lainnya dengan menggunakan aplikasi `Markdown`.
-2. Keuntungan menggunakan `Markdown` antara lain; sintaksnya yang sederhana, bebas digunakan, penggunaannya banyak dan independen (tidak tergantung pada suatu *platform* atau aplikasi).
+1. `Markdown` adalah sekumpulan sintaks *markup* yang memungkinkan kita untuk memformat dokumen teks kemudian mengubahnya menjadi dokumen `HTML` atau dokumen lainnya dengan menggunakan aplikasi `Markdown`.
+2. Keuntungan menggunakan `Markdown` antara lain; sintaksnya sederhana, bebas digunakan, penggunaannya luas dan independen (tidak tergantung pada suatu *platform* atau aplikasi).
 3. Sintaks Markdown terbagi menjadi dua yaitu: [sintaks dasar](/blog/markdown-sintaks-dasar/) dan [sintaks tambahan](/blog/markdown-sintaks-tambahan/).
 
 ## Referensi
