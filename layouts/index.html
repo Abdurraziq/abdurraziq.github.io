@@ -5,7 +5,7 @@
     <hr>
 
     {{- with (where .Site.RegularPages "Section" "blog") -}}
-    <h2 class="margin-top">Project Terakhir</h2>
+    <h2 class="margin-top">Artikel Terbaru</h2>
     <div class="row">
         {{ range first 6 . }}
         {{- $image := or .Params.image .Site.Params.og_image -}}
