@@ -131,8 +131,8 @@ Lebih lanjut sintaks-sintaks dasar akan dibahas [disini](/blog/markdown-sintaks-
 
 ## Referensi
 
-[^1]: [Foto John Gruber oleh Randy Stewart](https://commons.wikimedia.org/wiki/File:John_Gruber,_2009_(cropped).jpg) dengan lisensi [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) via Wikimedia Commons; Diakses pada 11 Februari 2021
-[^2]: [Foto Aaron Swartz oleh Fred Benenson](https://commons.wikimedia.org/wiki/File:Aaron_Swartz_profile.jpg) dengan lisensi [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) via Wikimedia Commons; Diakses pada 11 Februari 2021
-[^3]: [Getting Started | Markdown Guide oleh Matt Cone dan kontributor](https://www.markdownguide.org/getting-started/); Diakses pada 11 Februari 2021
-[^4]: [Markdown oleh John Gruber](https://daringfireball.net/projects/markdown/); Diakses pada 11 Februari 2021
-[^5]: [Markdown: License oleh John Gruber](https://daringfireball.net/projects/markdown/license); Diakses pada 11 Februari 2021
+[^1]: [*Foto John Gruber* oleh Randy Stewart](https://commons.wikimedia.org/wiki/File:John_Gruber,_2009_(cropped).jpg) dengan lisensi [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) via Wikimedia Commons; Diakses pada 11 Februari 2021
+[^2]: [*Foto Aaron Swartz* oleh Fred Benenson](https://commons.wikimedia.org/wiki/File:Aaron_Swartz_profile.jpg) dengan lisensi [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) via Wikimedia Commons; Diakses pada 11 Februari 2021
+[^3]: [*Getting Started | Markdown Guide* oleh Matt Cone dan kontributor](https://www.markdownguide.org/getting-started/); Diakses pada 11 Februari 2021
+[^4]: [*Markdown* oleh John Gruber](https://daringfireball.net/projects/markdown/); Diakses pada 11 Februari 2021
+[^5]: [*Markdown: License* oleh John Gruber](https://daringfireball.net/projects/markdown/license); Diakses pada 11 Februari 2021
