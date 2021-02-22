@@ -1,7 +1,7 @@
 ---
 title: 'Markdown: Sintaks Dasar'
 date: 2021-02-15T19:04:50.843Z
-draft: true
+draft: false
 description: Cara penulisan dan contoh penggunaan sintaks-sintaks dasar Markdown.
 tags:
   - Markdown
@@ -12,7 +12,9 @@ img_desc: Logo markdown
 
 ## Tinjauan
 
-Pada pembahasan sebelumnya tentang [pengenalan Markdown](/blog/markdown-pengenalan/) telah jelaskan tentang apa itu `Markdown`, cara kerja dan alasan kenapa kita harus menggunakannya. Sekarang pembahasannya akan difokuskan ke cara penulisan dan contoh penggunaan sintaks-sintaks dasar `Markdown`. Disebut sebagai sintaks dasar karena sintaks-sintaks tersebut pertama kali dibuat oleh penciptanya, John Gruber dan sintaks-sintaks tersebut didukung oleh hampir semua aplikasi `Markdown`.
+Pada pembahasan sebelumnya tentang [pengenalan Markdown](/blog/markdown-pengenalan/) telah jelaskan tentang apa itu `Markdown`, cara kerja dan alasan kenapa kita harus menggunakannya. Sekarang kita akan membahas tentang sintaks-sintaks dasar `Markdown` dimulai dari cara penulisannya sampai kepada contoh penggunaannya.
+
+Daftar sintaks-sintaks berikut ini disebut sebagai sintaks dasar karena sintaks-sintaks tersebut pertama kali dibuat oleh penciptanya, John Gruber dan sintaks-sintaks tersebut didukung oleh hampir semua aplikasi `Markdown`.
 
 ## 1. Judul *(Heading)*
 
@@ -21,7 +23,7 @@ Untuk membuat judul atau *heading*, kita bisa menggunakan tanda pagar `#` yang d
 Misalnya, untuk membuat *heading* level tiga `<h3>`, maka kita harus meletakkan tiga tanda pagar di depan kata/kalimat tersebut (mis., `### Header 3`).
 
 {{< table >}}
-| Markdown                 | HTML                       | Tampilan                 |
+| `Markdown`               | `HTML`                     | Tampilan                 |
 | ------------------------ | -------------------------- | ------------------------ |
 | `# Heading Level 1`      | `<h1>Heading Level 1</h1>` | <h1>Heading Level 1</h1> |
 | `## Heading Level 2`     | `<h2>Heading Level 2</h2>` | <h2>Heading Level 2</h2> |
@@ -30,7 +32,7 @@ Misalnya, untuk membuat *heading* level tiga `<h3>`, maka kita harus meletakkan 
 | `##### Heading Level 5`  | `<h5>Heading Level 5</h5>` | <h5>Heading Level 5</h5> |
 | `###### Heading Level 6` | `<h6>Heading Level 6</h6>` | <h6>Heading Level 6</h6> |
 {{< /table >}}
-**Catatan**: Sama seperti format html, level *heading* di Markdown hanya sampai 6.
+**Catatan**: Sama seperti format html, level *heading* di `Markdown` hanya sampai 6.
 
 Selain menggunakan tanda pagar `#` kita juga dapat menggunakan tanda `==` untuk heading level 1 dan `--` untuk heading level 2. Contohnya:
 
@@ -79,7 +81,7 @@ Raja Duyung sangat menyayangi ketujuh anaknya.
 
 ## 3. Memformat Teks
 
-Markdown mendukung pemformatan text seperti **menebalkan** *(bold)* atau *memiringkan* *(italic)* suatu text.
+`Markdown` mendukung pemformatan text seperti **menebalkan** *(bold)* atau *memiringkan* *(italic)* suatu text.
 
 Untuk menebalkan suatu kata/kalimat, kita perlu menambahkan dua tanda bintang `**` atau dua tanda garis bawah *(underscore)* `__` di awal dan di akhir kata/kalimat, sementara untuk memiringkan kata/kalimat, kita hanya perlu menggunakan satu tanda bintang `*` atau satu tanda garis bawah *(underscore)* `__`  di awal dan di akhir kata/kalimat teks tersebut Contohnya;
 
@@ -98,22 +100,21 @@ teks biasa — __teks tebal__ — _teks miring_ — ___teks tebal dan miring___
 {{< /result >}}
 
 {{< table >}}
-| Markdown                      | HTML                                              | Hasil                                           |
+| `Markdown`                    | `HTML`                                            | Hasil                                           |
 | ----------------------------- | ------------------------------------------------- | ----------------------------------------------- |
 | `teks biasa`                  | `<p>teks biasa</p>`                               | <p>teks biasa</p>                               |
 | `**teks tebal**`              | `<strong>teks tebal</strong>`                     | <strong>teks tebal</strong>                     |
 | `*teks miring*`               | `<em>teks miring</em>`                            | <em>teks miring</em>                            |
 | `***teks tebal dan miring***` | `<em><strong>teks tebal dan miring</strong></em>` | <em><strong>teks tebal dan miring</strong></em> |
-| `~~teks ini dicoret~~`        | `<del>teks ini dicoret</del>`                     | <del>teks ini dicoret</del>                     |
 {{< /table >}}
 
-## 4. Blockquote
+## 4. *Blockquote*
 
-Untuk membuat blockquote, kita harus menambahkan tanda `>` (lebih besar) di depan suatu paragraf.
+Untuk membuat *blockquote*, kita harus menambahkan tanda `>` (lebih besar) di depan suatu paragraf.
 
 contoh:
 
-```markdown {linenos=true}
+```md {linenos=true}
 > Hai.. Ini adalah blockquote
 ```
 
@@ -122,9 +123,9 @@ Akan dirender menjadi:
 > Hai.. Ini adalah blockquote
 {{< /result >}}
 
-### 4.1 Blockquote dengan multi paragraf
+### 4.1 *Blockquote* dengan multi paragraf
 
-Kita dapat membuat blockquotes dengan multi paragraf dengan menambahkan tanda `>` pada baris kosong antar paragraf.
+Kita dapat membuat *blockquotes* dengan multi paragraf dengan menambahkan tanda `>` pada baris kosong antar paragraf.
 
 contoh:
 
@@ -142,9 +143,9 @@ Akan dirender menjadi:
 > Illo praesentium autem nemo omnis ducimus ab officiis! Ad odio minima in.
 {{< /result >}}
 
-### 4.2 Blockquote yang bersarang
+### 4.2 *Blockquote* yang bersarang
 
-Untuk membuat blockquote dalam blockquote (bersarang) kita harus menambahkan tanda `>>` didepan paragraf yang ingin kita inginkan.
+Untuk membuat *blockquote* dalam *blockquote* (bersarang) kita harus menambahkan tanda `>>` di depan paragraf yang kita inginkan.
 
 contoh:
 
@@ -162,9 +163,9 @@ Akan dirender menjadi:
 >> Illo praesentium autem nemo omnis ducimus ab officiis! Ad odio minima in.
 {{< /result >}}
 
-### 4.3 Blockquote dengan elemen lainnya
+### 4.3 *Blockquote* dengan elemen lainnya
 
-Kita bisa juga menggunakan elemen lainnya ke dalam blockquote. Contohnya
+Kita bisa juga dapat menambahkan elemen lainnya ke dalam *blockquote*. Contohnya
 
 ```md {linenos=true}
 > ### Judul Quote
@@ -188,11 +189,11 @@ hasilnya;
 
 **Catatan**: Tidak semua elemen bisa digunakan dalam blockquote.
 
-## 5. List
+## 5. Daftar *(List)*
 
-Sama seperti di html, di Markdown kita juga dapat menggunakan daftar atau *list* baik yang berurutan *(ordered list)* maupun tidak *(unordered list)*.
+Sama seperti di html, di `Markdown` kita juga dapat menggunakan daftar atau *list* baik yang berurutan *(ordered list)* maupun tidak *(unordered list)*.
 
-### 5.1 Ordered List
+### 5.1 *Ordered List*
 
 Untuk membuat daftar berurutan *(ordered list)*, kita harus menambahkan angka diikuti dengan titik pada tiap baris item. Nomor tersebut tidak harus berurutan, tetapi harus dimulai dengan nomor satu.
 
@@ -234,9 +235,9 @@ Menggunakan nomor acak (harus dimulai dari 1):
 5. Ketiga
 {{< /result >}}
 
-### 5.2 Unordered List
+### 5.2 *Unordered List*
 
-Untuk membuat daftar yang tidak berurutan, kita harus menambahkan tanda hubung (-), tanda bintang (*), atau tanda tambah (+) pada tiap baris item. Inden satu atau beberapa item untuk membuat daftar bertingkat.
+Untuk membuat daftar yang tidak berurutan, kita harus menambahkan tanda hubung `-`, tanda bintang `*`, atau tanda tambah `+` pada tiap baris item.
 
 ```md {linenos=true}
 Menggunakan -
@@ -274,7 +275,7 @@ Menggunakan +
 
 ### 5.3 Daftar Bertingkat
 
-Jika kita ingin membuat daftar bertingkat di markdown maka kita harus menggunakan indentasi. Contoh;
+Jika kita ingin membuat daftar bertingkat di `Markdown` maka kita harus menggunakan indentasi. Contoh;
 
 ```md {linenos=true}
 Ordered List:
@@ -324,9 +325,9 @@ Gabungan
      2. kedua dari Pertama yang pertama
 {{< /result >}}
 
-## 5. Code
+## 5. Kode
 
-Untuk menunjukkan kata/kalimat adalah sebuah kode, maka kita haraus mengapit kata/kalimat dengan tanda kutip (`).
+Untuk menunjukkan kata/kalimat adalah sebuah kode, maka kita harus mengapit kata/kalimat tersebut dengan tanda petik *backtick* (umumnya terletak di samping kiri tombol angka 1) `` ` ``.
 
 ```md {linenos=true}
 `kode program`
@@ -338,7 +339,7 @@ Untuk menunjukkan kata/kalimat adalah sebuah kode, maka kita haraus mengapit kat
 
 ## 6. Garis Horizontal
 
-Membuat garis horizontal di markdown dapat dilakukan dengan menggunakan tiga atau lebih tanda bintang `***`, tanda hubung `---`, atau garis bawah `___`.
+Membuat garis horizontal di `Markdown` dapat dilakukan dengan menggunakan tiga atau lebih tanda bintang `***`, tanda hubung `---`, atau garis bawah `___`.
 
 ```md {linenos=true}
 Lorem ipsum dolor sit amet.
@@ -396,7 +397,7 @@ Selamat datang di [Raziq Tech](https://raziq.tech "Link Raziq Tech").
 Selamat datang di [Raziq Tech](https://raziq.tech "Link Raziq Tech").
 {{< /result >}}
 
-Jika kita ingin membuat link dengan hanya URL-nya saja maka kita harus mengapit alamat URL tersebut dengan tanda kurung sudut *(angle brackets)*.
+Jika kita ingin membuat link dengan hanya URL-nya saja maka kita harus mengapit alamat URL tersebut dengan tanda kurung sudut *(angle brackets)* `< >`.
 
 ```md {linenos=true}
 <https://raziq.tech>
@@ -408,7 +409,7 @@ Jika kita ingin membuat link dengan hanya URL-nya saja maka kita harus mengapit 
 
 ## 8. Gambar
 
-Menyisipkan gambar di Markdown dapat dilakukan dengan cara yang hampir sama dengan membuat link hanya tinggal menambahkan tanda seru di depannya saja. Nantinya teks yang berada dalam kurung siku akan berfungi sebagai alternative text yang akan ditampilkan ketika gambarnya gagal dimuat.
+Menyisipkan gambar di `Markdown` dapat dilakukan dengan cara yang hampir sama dengan membuat tautan hanya tinggal menambahkan tanda seru `!` di depannya saja. Nantinya teks yang berada dalam kurung siku akan berfungi sebagai *alternative text* yang akan ditampilkan ketika gambarnya gagal dimuat.
 
 ```md {linenos=true}
 syntax:
@@ -422,7 +423,7 @@ contoh:
 ![Logo Raziq Tech](/icons/icon-192x192.png)
 {{< /result >}}
 
-Sama seperti link kita juga dapat menambahkan judul atau *title* untuk *tooltips*.
+Sama seperti membuat tautan kita juga dapat menambahkan judul atau *title* untuk *tooltips*.
 
 ```md {linenos=true}
 syntax:
@@ -450,14 +451,15 @@ contoh:
 [![Logo Raziq Tech](/icons/icon-192x192.png "Ini logo Raziq Tech")](https://raziq.tech)
 {{< /result >}}
 
-## 9. Escaping Characters
+## 9. *Escaping Characters*
 
-Untuk menampilkan karakter yang sebenarnya digunakan untuk memformat teks dalam dokumen `Markdown` kita harus menambahkan garis miring terbalik *(backslash)* `\` di depan karakter.
+Untuk menampilkan karakter yang sebenarnya digunakan untuk memformat teks dalam dokumen `Markdown` (mis; karakter `*`, `#` dll) kita harus menambahkan garis miring terbalik *(backslash)* `\` di depan karakter tersebut.
 
-Contohnya jika kita ingin menampilkan tanda bintang di depan kalimat, maka kita harus menambahkan tanda garis miring terbalik *(backslash)* `\` di depan kata atau kalimat tersebut agar tidak berubah menjadi sebuah daftar tak berurutan *(unordered list)*.
+Contohnya, jika kita ingin menampilkan tanda bintang `*` di depan kalimat, maka kita harus menambahkan tanda garis miring terbalik *(backslash)* `\` di depan kalimat tersebut. Jika tidak maka, `Markdown` akan memformatnya menjadi sebuah daftar tak berurutan *(unordered list)*.
 
 ```md {linenos=true}
 * Diawali tanpa *(backslash)* `\`.
+
 \* Diawali dengan *(backslash)* `\`.
 ```
 
@@ -467,7 +469,7 @@ Contohnya jika kita ingin menampilkan tanda bintang di depan kalimat, maka kita 
 \* Diawali dengan *(backslash)* `\`.
 {{< /result >}}
 
-Kita dapat menggunakan garis miring terbalik *(backslash)* untuk karakter berikut.
+Kita dapat menggunakan garis miring terbalik *(backslash)* untuk melakukan *Escaping Characters* pada karakter berikut.
 
 | Karakter| Nama                                      |
 |---------| ----------------------------------------- |
@@ -488,9 +490,9 @@ Kita dapat menggunakan garis miring terbalik *(backslash)* untuk karakter beriku
 
 ## 10. HTML
 
-Banyak aplikasi `Markdown` yang memungkinkan Kita untuk menggunakan tag HTML dalam teks berformat `Markdown`. Ini berguna jika Anda lebih memilih tag HTML tertentu daripada sintaks `Markdown`. Misalnya, beberapa orang merasa lebih mudah menggunakan tag HTML untuk gambar. Menggunakan HTML juga berguna saat Anda perlu mengubah atribut elemen, seperti menentukan warna teks atau mengubah lebar gambar. Untuk menggunakan HTML, tempatkan tag dalam teks file Anda yang berformat `Markdown`.
+Banyak aplikasi `Markdown` yang memungkinkan kita untuk menggunakan tag `HTML` dalam teks berformat `Markdown`. Ini berguna jika kita ingin melakukan pemformatan elemen yang tidak diakomodasi oleh sintaks `Markdown`. Untuk menggunakan tag `HTML` dalam dokumen `Markdown` kita dapat langsung menuliskan tag `HTML` ke dalam file tersebut.
 
-```md
+```md {linenos=true}
 ini **teks tebal**, <em>teks miring</em> dan <u>teks dengan garis bawah</u>
 ```
 
@@ -498,4 +500,15 @@ ini **teks tebal**, <em>teks miring</em> dan <u>teks dengan garis bawah</u>
 ini **teks tebal**, <em>teks miring</em> dan <u>teks dengan garis bawah</u>
 {{< /result >}}
 
-Untuk alasan keamanan, tidak semua aplikasi `Markdown` mendukung HTML dalam dokumen `Markdown`. Beberapa aplikasi hanya mendukung sebagian dari tag HTML.
+Untuk alasan keamanan, tidak semua aplikasi `Markdown` mendukung tag `HTML` dalam dokumen `Markdown`. Beberapa aplikasi hanya mendukung sebagian dari tag `HTML`.
+
+Kita tidak dapat menggunakan sintaks `Markdown` di dalam tag `HTML` tingkat blok. Misalnya;
+
+```md {linenos=true}
+<p>italic and **bold**</p>
+```
+
+## Referensi
+
+1. [*Basic Syntax | Markdown Guide* oleh Matt Cone dan kontributor](https://www.markdownguide.org/basic-syntax/); Diakses pada 15 Februari 2021
+2. [*Daring Fireball: Markdown Syntax Documentation* oleh John Gruber](https://daringfireball.net/projects/markdown/syntax); Diakses pada 15 Februari 2021
