@@ -113,7 +113,7 @@ Tabel berikut ini menunjukkan pembagian sintaks-sintaks `Markdown`.
 | Penekanan teks *(Emphasis)* | Catatan kaki                          |
 | *Blockquote*                | ID Judul *(Heading IDs)*              |
 | Daftar                      | Daftar definisi *(definition lists)*  |
-| Kode                        | teks tercoret *(strikethrough)*       |
+| Kode                        | Teks tercoret *(strikethrough)*       |
 | Garis horizontal            | Daftar tugas *(tasks list)*           |
 | Tautan                      | Emoji                                 |
 | Gambar                      | Tautan URL Otomatis                   |
