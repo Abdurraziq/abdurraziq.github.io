@@ -52,6 +52,7 @@ fieldset {
   border-radius: $card-border-radius;
   padding: $padding;
   margin: $margins 0;
+  min-width: 0;
 }
 
 legend {
