@@ -453,7 +453,7 @@ contoh:
 
 ## 9. *Escaping Characters*
 
-Untuk menampilkan karakter yang sebenarnya digunakan untuk memformat teks dalam dokumen `Markdown` (mis; karakter `*`, `#` dll) kita harus menambahkan garis miring terbalik *(backslash)* `\` di depan karakter tersebut.
+Untuk menampilkan karakter yang sebenarnya digunakan untuk memformat teks dalam dokumen `Markdown` (mis., karakter `*`, `#` dll) kita harus menambahkan garis miring terbalik *(backslash)* `\` di depan karakter tersebut.
 
 Contohnya, jika kita ingin menampilkan tanda bintang `*` di depan kalimat, maka kita harus menambahkan tanda garis miring terbalik *(backslash)* `\` di depan kalimat tersebut. Jika tidak maka, `Markdown` akan memformatnya menjadi sebuah daftar tak berurutan *(unordered list)*.
 

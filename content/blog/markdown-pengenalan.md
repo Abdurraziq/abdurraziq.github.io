@@ -24,7 +24,7 @@ Sumber gambar: Wikimedia [^1] [^2]
 
 ## B. Cara Kerja Markdown
 
-Banyak dari kita mungkin terbiasa menulis dokumen dengan menggunakan editor jenis `WYSIWYG` *(what you see is what you get)* misalnya; Microsoft Word, Libre Office dsb. Editor tersebut memungkinkan kita memformat suatu kata/kalimat hanya dengan menekan tombol (atau *shortcut keyboard*) dan perubahannya bisa langsung terlihat di layar. Sementara, jika kita menggunakan `Markdown` maka, kita harus menuliskan suatu sintaks jika ingin memformat kata/kalimat yang diinginkan. Misalnya, untuk membuat suatu kata/kalimat menjadi miring *(italic)* maka, kita harus menambahkan tanda bintang `*` di awal dan di akhir kata/kalimat tersebut (mis; `*teks*`). [^3]
+Banyak dari kita mungkin terbiasa menulis dokumen dengan menggunakan editor jenis `WYSIWYG` *(what you see is what you get)* misalnya; Microsoft Word, Libre Office dsb. Editor tersebut memungkinkan kita memformat suatu kata/kalimat hanya dengan menekan tombol (atau *shortcut keyboard*) dan perubahannya bisa langsung terlihat di layar. Sementara, jika kita menggunakan `Markdown` maka, kita harus menuliskan suatu sintaks jika ingin memformat kata/kalimat yang diinginkan. Misalnya, untuk membuat suatu kata/kalimat menjadi miring *(italic)* maka, kita harus menambahkan tanda bintang `*` di awal dan di akhir kata/kalimat tersebut (mis., `*teks*`). [^3]
 
 ![Dokumen Markdown di VSCode](/img/markdown-preview.png "Sebuah dokumen `Markdown` yang sedang dibuka di VSCode <br>*sebelah kiri menunjukkan dokumen `Markdown` dan sebelah kanan adalah tampilan pratinjau dari dokumen tersebut*")
 
