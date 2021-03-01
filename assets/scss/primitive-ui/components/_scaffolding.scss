@@ -42,7 +42,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin: $margins 0;
+  margin: 2rem 0 $margins;
   font-weight: $heading-font-weight;
   font-family: $heading-font-family;
   line-height: $heading-line-height;
@@ -53,12 +53,10 @@ h5 {
   }
 }
 
-// Increased margin on additional headings
-h1:not(:first-child),
-h2:not(:first-child),
-h3:not(:first-child),
-h4:not(:first-child) {
-  margin-top: 2rem;
+h2 + h3,
+h3 + h4,
+h4 + h5 {
+  margin-top: 0 !important;
 }
 
 // Heading individual styles
@@ -133,7 +131,7 @@ figure {
 }
 
 figcaption {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 // Highlight
