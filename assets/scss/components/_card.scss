@@ -9,8 +9,6 @@
 
 .card-img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
 }
 
 .card-body {
@@ -49,5 +47,12 @@
     a {
         color: $font-color !important;
         text-decoration: none !important;
+    }
+}
+
+@include small-breakpoint {
+    .card-img {
+        height: 150px;
+        object-fit: cover;
     }
 }
