@@ -6,7 +6,7 @@ description: Pengenalan tentang apa itu Markdown, cara kerja dan kenapa kita har
 tags:
     - Markdown
     - md
-image: /img/markdown-mark.svg
+image: /img/markdown/markdown-mark.svg
 img_desc: "Logo Markdown oleh [Dustin Curtis](https://github.com/dcurtis) dari [markdown-mark Repository](https://github.com/dcurtis/markdown-mark)"
 ---
 
@@ -16,7 +16,7 @@ Berbicara tentang `Markdown` sebenarnya kita berbicara tentang dua hal; pertama 
 
 Jika berbicara tentang sintaks maka, `Markdown` adalah sekumpulan sintaks *markup* yang memungkinkan kita untuk memformat suatu elemen dalam dokumen teks. Sementara jika berbicara tentang perangkat lunak maka, `Markdown` adalah sebuah perangkat lunak yang dapat mengubah dokumen dengan sintaks tadi menjadi dokumen `HTML` atau format lainnya.
 
-![John Gruber dan Aaron Swartz](/img/John_and_Aaron.jpg "John Gruber *(kiri)* dan Aaron Swartz *(kanan)*")
+![John Gruber dan Aaron Swartz](/img/markdown/John_and_Aaron.jpg "John Gruber *(kiri)* dan Aaron Swartz *(kanan)*")
 
 Sumber gambar: Wikimedia [^1] [^2]
 
@@ -28,11 +28,11 @@ Banyak dari kita mungkin terbiasa menulis dokumen dengan menggunakan editor jeni
 
 Sementara, jika kita menggunakan `Markdown` maka, kita harus menuliskan suatu sintaks jika ingin memformat kata/kalimat yang diinginkan. Misalnya, untuk membuat suatu kata/kalimat menjadi miring *(italic)* maka, kita harus menambahkan tanda bintang `*` di awal dan di akhir kata/kalimat tersebut (mis., `*teks*`). [^3]
 
-![Dokumen Markdown di VSCode](/img/markdown-preview.png "Sebuah dokumen `Markdown` yang sedang dibuka di VSCode <br>*sebelah kiri menunjukkan dokumen `Markdown` dan sebelah kanan adalah tampilan pratinjau dari dokumen tersebut*")
+![Dokumen Markdown di VSCode](/img/markdown/markdown-preview.png "Sebuah dokumen `Markdown` yang sedang dibuka di VSCode <br>*sebelah kiri menunjukkan dokumen `Markdown` dan sebelah kanan adalah tampilan pratinjau dari dokumen tersebut*")
 
-Dokumen Markdown umumnya berupa dokumen teks sederhana *(plain text)* sehingga dapat dibaca/tulis dengan mudah menggunakan teks editor yang paling sederhana sekalipun seperti Notepad. Jika kita menginginkan editor yang memiliki fitur lebih lengkap seperti pratinjau dokumen, *syntax highlighting*, dsb kita bisa menggunakan editor yang lebih *advance* seperti `VSCode`, `Atom` dsb. Bahkan, sekarang ini telah banyak teks editor *online* yang mendukung pembuatan dan pengeditan file `Markdown` secara langsung di *browser*.
+Dokumen `Markdown` umumnya berupa dokumen teks sederhana *(plain text)* sehingga dapat dibaca/tulis dengan mudah menggunakan teks editor yang paling sederhana sekalipun seperti Notepad. Jika kita menginginkan editor yang memiliki fitur lebih lengkap seperti pratinjau dokumen, *syntax highlighting*, dsb kita bisa menggunakan editor yang lebih *advance* seperti `VSCode`, `Atom` dsb. Bahkan, sekarang ini telah banyak teks editor *online* yang mendukung pembuatan dan pengeditan file `Markdown` secara langsung di *browser*.
 
-![Proses](/img/markdown-process.png "Proses penghubahan dokumen `Markdown` hingga dapat ditampilkan di *browser*")
+![Proses](/img/markdown/markdown-process.png "Proses penghubahan dokumen `Markdown` hingga dapat ditampilkan di *browser*")
 
 Secara garis besar jika kita ingin menggunakan `Markdown` untuk memformat dokumen maka kita harus;
 
@@ -86,7 +86,7 @@ Dari perbandingan di atas dapat terlihat bahwa sintaks `Markdown` dapat terbaca 
 
 ### 3. Banyak digunakan dimana-mana
 
-Jika kita biasa *berselancar* di GitHub atau GitLab maka kita akan menemui bahwa hampir sebagian besar repositori yang ada di sana menggunakan `Markdown` untuk membuat dokumentasinya. Bahkan situs web seperti Reddit dan aplikasi chat seperti; Discord, Facebook, Telegram, WhatsApp dsb. menggunakan Markdown untuk memformat teks.
+Jika kita biasa *berselancar* di GitHub atau GitLab maka kita akan menemui bahwa hampir sebagian besar repositori yang ada di sana menggunakan `Markdown` untuk membuat dokumentasinya. Bahkan situs web seperti Reddit dan aplikasi chat seperti; Discord, Facebook, Telegram, WhatsApp dsb. menggunakan `Markdown` untuk memformat teks.
 
 Karena semakin meluasnya implementasi `Markdown` maka kita sekarang-pun dapat menggunakannya untuk membuat buku, bahkan konten halaman web.
 
@@ -129,7 +129,7 @@ Lebih lanjut sintaks-sintaks dasar akan dibahas [disini](/blog/markdown-sintaks-
 
 1. `Markdown` adalah sekumpulan sintaks *markup* yang memungkinkan kita untuk memformat dokumen teks kemudian mengubahnya menjadi dokumen `HTML` atau dokumen lainnya dengan menggunakan aplikasi `Markdown`.
 2. Keuntungan menggunakan `Markdown` antara lain; sintaksnya sederhana, bebas digunakan, penggunaannya luas dan independen (tidak tergantung pada suatu *platform* atau aplikasi).
-3. Sintaks Markdown terbagi menjadi dua yaitu: [sintaks dasar](/blog/markdown-sintaks-dasar/) dan [sintaks tambahan](/blog/markdown-sintaks-tambahan/).
+3. Sintaks `Markdown` terbagi menjadi dua yaitu: [sintaks dasar](/blog/markdown-sintaks-dasar/) dan [sintaks tambahan](/blog/markdown-sintaks-tambahan/).
 
 ## Referensi
 

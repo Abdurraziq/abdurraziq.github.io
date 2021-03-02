@@ -6,8 +6,8 @@ description: Sintaks-sintaks tambahan dalam Markdown
 tags:
   - Markdown
   - md
-image: /img/markdown-mark.svg
-img_desc: Logo markdown
+image: /img/markdown/markdown-mark.svg
+img_desc: "Logo Markdown oleh [Dustin Curtis](https://github.com/dcurtis) dari [markdown-mark Repository](https://github.com/dcurtis/markdown-mark)"
 ---
 
 ## Tinjauan
