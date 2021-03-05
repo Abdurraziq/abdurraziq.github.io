@@ -12,7 +12,7 @@ img_desc: "Logo Markdown oleh [Dustin Curtis](https://github.com/dcurtis) dari [
 
 ## Tinjauan
 
-Sintaks-sintaks dasar `Markdown` sebenarnya cukup untuk digunakan dalam pemformatan elemen yang sederhana, tapi terkadang sintaks-sintaks tersebut dirasa belum cukup bagi sebagian orang. Pada akhirnya beberapa orang dan organisasi mengambil inisiatif untuk menambahkan beberapa sintaks-sintaks tambahan pemformatan seperti; tabel, blok kode, penyorotan sintaks dan lainnya ke dalam sintaks `Markdown`.
+Sintaks-sintaks dasar `Markdown` sebenarnya cukup untuk digunakan dalam pemformatan elemen yang sederhana, tapi terkadang sintaks-sintaks tersebut dirasa belum cukup bagi sebagian orang. Pada akhirnya beberapa orang dan organisasi mengambil inisiatif untuk menambahkan beberapa sintaks tambahan seperti; tabel, blok kode, penyorotan sintaks dan lainnya ke dalam sintaks `Markdown`.
 
 Sintaks-sintaks tambahan tersebut tidak dibuat/ditetapkan oleh pembuat aslinya atau suatu badan standarisasi sehingga masing-masing orang/organisasi dapat membuat sintaksnya masing-masing. Ini berakibat pada, sintaks-sintaks tambahan tersebut adakalanya hanya didukung oleh sebagian aplikasi `Markdown` saja. Jadi, penting untuk memastikan bahwa sintaks-sintaks tambahan yang akan kita gunakan didukung oleh aplikasi `Markdown` yang kita gunakan.
 
