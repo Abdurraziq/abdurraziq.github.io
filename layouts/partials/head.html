@@ -32,7 +32,13 @@
     <meta name="description" content="{{ $description }}">
     <meta name="googlebot" content="index,follow" />
     <meta name="language" content="Indonesian">
-    <meta name="robots" content="index,follow" /> 
+
+    {{ if or (eq .RelPermalink "/offline/") (eq .RelPermalink "/404.html") }}
+        <meta name="robots" content="noindex">
+    {{ else }}
+        <meta name="robots" content="index,follow" />
+    {{ end }}
+
     <meta name="url" content="{{ .Permalink }}" />
     
     <meta itemprop="description" content="{{ $description }}" />
