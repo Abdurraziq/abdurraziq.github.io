@@ -10,11 +10,12 @@ image: /img/arduino/arduino-ide-splash.png
 img_desc: 'Tampilan *splash screen* Arduino IDE oleh Martino Facchin dari [Arduino Blog](https://blog.arduino.cc/2015/11/03/arduino-ide-1-6-6-released-and-available-for-download/ "Arduino IDE 1.6.6 released and available for download")'
 ---
 
-Karena Arduino IDE mendukung berbagai Platform OS seperti; Microsoft Windows, Mac OS X dan Linux maka petunjuk penginstalannya akan dibagi berdasarkan platform OS. Sebelumnya perlu diingatkan bahwa saat artikel ini ditulis versi Arduino IDE stabil terbaru adalah 1.8.13.
+Arduino IDE mendukung berbagai Platform OS seperti; Microsoft Windows, Mac OS X dan Linux sehingga petunjuk penginstalannya akan dibagi berdasarkan platform OS. Saat artikel ini ditulis versi stabil Arduino IDE terbaru adalah 1.8.13.
 
 ## Microsoft Windows
 
 1. Unduh Arduino IDE
+   
    Kita dapat mengunduh versi terbaru Arduino IDE di halaman [Software Arduino](https://www.arduino.cc/en/software).
 
    ![Download page](/img/arduino/download-page-win.png "Sebaiknya kita memilih pilihan **Win 7 and Newer** yang berupa *installer* `.exe`")
