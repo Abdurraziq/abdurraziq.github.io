@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /404.html
 Disallow: /offline/
-Sitemap: https://abdurraziq.github.io/sitemap.xml
+Sitemap: https://abdurraziq.me/sitemap.xml
