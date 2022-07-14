@@ -1,4 +1,4 @@
-baseURL = "https://abdurraziq.github.io/"
+baseURL = "https://abdurraziq.me/"
 languageCode = "in"
 DefaultContentLanguage = "id"
 title = "Raziq Tech"
@@ -24,7 +24,7 @@ disqusShortname = "raziq-tech"
 
 [params]
 
-  Description = "raziq.tech Site"
+  Description = "raziq Site"
   og_image = "/icons/icon-512x512.png"
 
   [params.social]
